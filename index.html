@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche 911</title>
+    <link rel="shortcut icon" href="porsche.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lexend:wght@100..900&display=swap');
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: lexend;
+        }
+        :root{
+            --maincolor:white;
+            --padding:15px
+        }
+
+        body {
+            background-image: url(assets/bg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+
+        section {
+
+            height: 175vh;
+            width: 100vw;
+            gap: 10px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+        
+
+        .links {
+            width: 100vw;
+            height: 10vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+
+        header .img {
+            width: 9.5%;
+            height: 95%;
+
+        }
+
+        header .img img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            animation: p 1.5s ease-in-out 6  alternate;
+
+        }
+
+
+        @keyframes p{
+            from{}
+            to{ transform: translatex(100vh) translatey(-100px) rotate(360deg)translatey(100px)  ;
+                
+            }
+        }
+
+        .links .list {
+            width: 50%;
+            height: 100%;
+        }
+
+        .links .list ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            height: 100%;
+            align-items: center;
+        }
+
+        header ul li {
+            height: 50%;
+            width: 15%;
+            text-align: center;
+            font-size: 150%;
+            align-content: center;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.764);
+            border-radius: 20px;
+            transition: 0.5s ease-in-out;
+        }
+
+        header ul li:hover{
+            background: linear-gradient(90 deg,rgba(2, 0, 36, 1)0%,rgba(9,9,121,1)35%,rgba(0,212,255,1)100%);
+            transform:scale(1);
+            height: 60%;
+            width: 20%;
+            box-shadow: 0px 0px 40px rgb(0, 0, 0);
+
+            
+        }
+
+        .list ul li a {
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            height: 100%;
+            display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+        }
+
+
+        main {
+            width: 80vw;
+            height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 5px;
+            justify-content: center;
+            position: relative;
+            top: 5%;
+            padding: var(--padding);
+            background: rgba(0, 0, 0, 0.652);
+            border-radius: 50px;
+            color: var(--maincolor);
+                        transition: 0.5s ease-in-out;
+
+        }
+        main:hover{
+                box-shadow: 0px 0px 80px rgb(0, 0, 0);
+                border:2px solid white;
+            
+                
+
+        }
+
+        main h1 {
+            height: 10%;
+            width: 100%;
+            text-align: center;
+        }
+
+        main .written {
+            display: flex;
+            justify-content: center;
+        }
+
+        main img {
+            width: 30%;
+            height: 80%;
+            float: right;
+            position: relative;
+            top: 20px
+        }
+
+        main div {
+            width: 100%;
+            height: 80%;
+            text-align: center;
+            display: flex;
+            overflow: auto;
+        }
+
+        .main2 div {
+            display: flex;
+            
+            
+        }
+        
+        
+
+        .main2 div h1 {
+            height: 100%;
+            width: 40%;
+
+        }
+
+        .main2 div p {
+            width: 60%;
+            height: 100%;
+            
+        }
+
+        @media all and (max-width:600px){
+            body{
+                background-image: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header class="links">
+        <div class="img">
+            <a href="">
+                <img src="porsche.png" alt="logo">
+            </a>
+        </div>
+        <div class="list">
+            <ul>
+                <li><a href="">HOME</a> </li>
+                <li><a href="">ABOUT </a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+
+        <main>
+            <h1>PORSCHE 911: The Classic Machine</h1>
+            <div class="written">
+                <p>The Porsche 911 stands as a timeless icon in the world of automobiles—an enduring symbol of precision engineering, elegance, and raw performance. 
+                    First introduced in 1964, the 911 has carved a legacy that few cars can rival. With its instantly recognizable silhouette, rear-engine layout, and roaring flat-six engine,
+                    it’s more than just a sports car; It’s a machine that speaks to the soul of a true enthusiast. Unlike fleeting trends, the 911 has never compromised its identity. 
+                    Over decades, it has evolved in design, technology, and performance—adapting to modern needs while preserving the heart of what made it legendary. 
+                    From racetracks to scenic highways, the Porsche 911 offers a driving experience that feels both thrilling and precise, like a symphony of mechanics and emotion.
+                    Beyond speed and style, the 911 carries a story—a story of heritage, innovation, and the relentless pursuit of perfection.
+                    It is not just a machine built for the road, but a statement of class, craftsmanship, and passion. Whether you’re a collector, a racer,
+                    or a dreamer staring at it from afar, the Porsche 911 commands respect. It truly is, and forever will be, the classic machine.</p>
+                <img src="main.jpg" alt="">
+                <p>From its humble beginnings in the early 1960s to the cutting-edge marvels of today, the Porsche 911 has seen a remarkable evolution. 
+                    What started as the Type 901 soon became the 911 due to a trademark dispute, but the name change did nothing to dim its destiny. 
+                    With each generation—whether it was the air-cooled charm of the classic models or the refined aggression of the modern turbocharged beasts—the 911 has adapted gracefully,
+                    preserving its soul while embracing innovation. Technological milestones like the introduction of all-wheel drive, advanced aerodynamics, adaptive suspension,
+                    and digital driving aids have kept the 911 relevant in a fiercely competitive market. Yet, it has never lost its signature feel—that connection between driver and machine that few cars offer today.
+                    In the modern luxury sports car market, the 911 remains unmatched in versatility. It’s as comfortable on the racetrack as it is on a daily commute. 
+                    Competing against the likes of Ferrari, Aston Martin, and McLaren, Porsche’s pricing strategy and build quality make the 911 a value-packed powerhouse.
+                    Whether it's the Carrera, Turbo, or GT3 RS, every model continues to uphold the legacy—earning loyal fans and new admirers with each turn of the wheel.
+                </p>
+            </div>
+        </main>
+
+        <main class="main2">
+            <div class="p1">
+                <h1>Porsche 911 Engine:
+                </h1>
+                <p>From its humble beginnings in the early 1960s to the cutting-edge marvels of today, the Porsche 911 has seen a remarkable evolution.
+                    What started as the Type 901 soon became the 911 due to a trademark dispute, but the name change did nothing to dim its destiny.
+                    With each generation—whether it was the air-cooled charm of the classic models or the refined aggression of the modern turbocharged 
+                    beasts—the 911 has adapted gracefully, preserving its soul while embracing innovation. Technological milestones like the introduction of all-wheel drive, 
+                    advanced aerodynamics, adaptive suspension, and digital driving aids have kept the 911 relevant in a fiercely competitive market. 
+                    Yet, it has never lost its signature feel—that connection between driver and machine that few cars offer today. In the modern luxury sports car market, 
+                    the 911 remains unmatched in versatility. It’s as comfortable on the racetrack as it is on a daily commute. Competing against the likes of Ferrari, 
+                    Aston Martin, and McLaren, Porsche’s pricing strategy and build quality make the 911 a value-packed powerhouse. Whether it's the Carrera, Turbo, or GT3 RS, 
+                    every model continues to uphold the legacy—earning loyal fans and new admirers with each turn of the wheel
+</p>
+            </div>
+            <div class="p2">
+                <h1>Porsche Sales in India: A Rising Passion:</h1>
+                <p>
+                    Porsche’s presence in India has grown steadily over the years, reflecting a rising appetite for luxury performance vehicles among Indian buyers. 
+                    The Porsche 911, being the flagship sports car, has garnered admiration from enthusiasts and collectors alike. While the brand operates in a niche segment, 
+                    its sales have shown consistent growth, especially in metro cities like Delhi, Mumbai, Bangalore, and Hyderabad. In recent years, Porsche India recorded its highest-ever sales,
+                    driven by increasing demand for models like the 911, Cayenne, and Taycan. With expanding dealership networks and personalized service, 
+                    Porsche continues to strengthen its foothold in the Indian luxury market.
+                </p>
+            </div>
+        </main>
+        <footer class="links" >
+            <div class="list" >
+            <ul  > 
+                <li ><a href="">Oppertunities</a> </li>
+                <li><a href="">Cppyright </a></li>
+                <li><a href="">FAQ </a></li>
+            </ul>
+
+        </footer>
+    </section>
+</body>
+</html>
